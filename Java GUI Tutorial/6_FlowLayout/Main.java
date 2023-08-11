@@ -1,10 +1,10 @@
-import java.awt.FlowLayout;
+import java.awt.FlowLayout;		//	https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/java/awt/FlowLayout.html
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 import java.awt.Color;
-import java.awt.Dimension;
+import java.awt.Dimension;		//	https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/java/awt/Dimension.html
 
 public class Main
 {
@@ -22,9 +22,9 @@ public class Main
 		frame.setLayout(new FlowLayout(FlowLayout.CENTER, 10, 10));
 		
 		JPanel panel = new JPanel();
-		panel.setPreferredSize(new Dimension(250,250));
+		//panel.setPreferredSize(new Dimension(250,250));
 		panel.setBackground(Color.lightGray);
-		panel.setLayout(new FlowLayout());
+		panel.setLayout(new FlowLayout(FlowLayout.CENTER, 10, 10));
 		
 		/*
 		frame.add(new JButton("1"));

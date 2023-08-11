@@ -1,8 +1,8 @@
 import java.awt.*;
 import javax.swing.*;
-import javax.swing.event.*;
+import javax.swing.event.*;		//	https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/javax/swing/JSlider.html
 
-public class SliderDemo implements ChangeListener
+public class SliderDemo implements ChangeListener	//	https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/javax/swing/event/ChangeListener.html
 {	
 	JFrame frame;
 	JPanel panel;
@@ -15,6 +15,11 @@ public class SliderDemo implements ChangeListener
 		panel = new JPanel();
 		label = new JLabel();
 		slider = new JSlider(0, 100, 50);
+		/*
+			0-minimum 
+			100-maximum
+			50-starting point
+		*/
 		
 		slider.setPreferredSize(new Dimension(400,200));
 		
@@ -24,7 +29,7 @@ public class SliderDemo implements ChangeListener
 		slider.setPaintLabels(true);
 		slider.setFont(new Font(Font.SANS_SERIF/*"MV Boli"*/, Font.PLAIN, 15));
 		label.setFont(new Font(Font.SANS_SERIF/*"MV Boli"*/, Font.PLAIN, 25));
-		//	slider.setOrientation(SwingConstants.HORIZONTAL);
+		//	slider.setOrientation(SwingConstants.HORIZONTAL);	//	Default
 		slider.setOrientation(SwingConstants.VERTICAL);
 		
 		slider.addChangeListener(this);

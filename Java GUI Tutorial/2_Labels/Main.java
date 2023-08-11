@@ -1,11 +1,11 @@
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.ImageIcon;
-import javax.swing.border.Border;
-import javax.swing.BorderFactory;
+import javax.swing.border.Border;	//	https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/javax/swing/border/Border.html
+import javax.swing.BorderFactory;	//	https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/javax/swing/BorderFactory.html
 
 import java.awt.Color;
-import java.awt.Font;
+import java.awt.Font;				//	https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/java/awt/Font.html
 
 public class Main
 {
@@ -16,6 +16,18 @@ public class Main
 		
 		ImageIcon image = new ImageIcon("C:\\Users\\AT95\\OneDrive\\Desktop\\Java GUI Tutorial\\2_labels\\image.jfif");
 		Border border = BorderFactory.createLineBorder(Color.red, 3);
+		/*
+			Border border: This declares a variable named border of type Border. 
+			The Border class is used to define the appearance of the border around a UI component.
+			BorderFactory.createLineBorder(...): This is a static method from the BorderFactory class, which is a utility class in Swing for creating various types of borders. 
+			The method createLineBorder(...) is used to create a simple line border with specific properties.
+			Color.red: This is a reference to the Color class's red constant, which represents the color red. 
+			In this context, it specifies the color of the border you want to create.
+		    This number represents the thickness of the border line in pixels.
+			So, when you put it all together, the line of code is creating a red line border with a thickness of 3 pixels and assigning it to the border variable. 
+			You can then use this border object to set the border of a Swing component, like a panel or a button, by calling a method like setBorder(border) on that component. 
+			This will visually surround the component with a red line border of the specified thickness.
+		*/
 		
 		JLabel label = new JLabel();				//	create a label
 		/*

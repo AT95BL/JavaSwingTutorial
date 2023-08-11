@@ -29,7 +29,7 @@ public class MyFrame extends JFrame implements ActionListener
 		textField.setBackground(Color.black);
 		textField.setCaretColor(Color.white);
 		textField.setText("username: ");
-		textField.setEditable(false);
+		// textField.setEditable(false);	inace, ako se uklone // nista od edit-ovanja
 		
 		this.add(button);
 		this.add(textField);

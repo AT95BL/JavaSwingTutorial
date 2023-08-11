@@ -1,4 +1,4 @@
-import java.awt.BorderLayout;
+import java.awt.BorderLayout;			//	https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/java/awt/BorderLayout.html
 import java.awt.Color;
 
 import javax.swing.JFrame;
@@ -77,3 +77,9 @@ public class Main
 		
 	}
 }
+/*
+	Za najbolje razumijevanje tekuceg tutorial-a opet predlazem
+	samostalno prekucavanje line-by-line..
+	Svako novo dodavanja linije code-a iskompajlirati i zatim pokrenuti program.
+
+*/

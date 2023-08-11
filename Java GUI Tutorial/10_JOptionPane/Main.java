@@ -1,4 +1,4 @@
-import javax.swing.JOptionPane;
+import javax.swing.JOptionPane;	//	https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/javax/swing/JOptionPane.html
 import javax.swing.ImageIcon;
 
 public class Main
@@ -20,12 +20,12 @@ public class Main
 		*/
 		
 		JOptionPane.showConfirmDialog(null, "Bro do you even code?", "This is my title", JOptionPane.YES_NO_CANCEL_OPTION);
+		
 		String name = JOptionPane.showInputDialog("What is your name?: ");
 		System.out.println("Hello " + name);
 		
 		String[] resposnses = {"No, you are awesome!", "thank you!", "*blush*"};
 		ImageIcon icon = new ImageIcon("C:\\Users\\AT95\\OneDrive\\Desktop\\Java GUI Tutorial\\10_JOptionPane\\png-transparent-smiley-thumb-signal-emoticon-smiley-miscellaneous-face-emoji resize1.png");
-		
 		JOptionPane.showOptionDialog(
 		null, 
 		"You are awesome", 

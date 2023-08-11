@@ -13,3 +13,5 @@ For example, in Java Swing, you have JLabel, in HTML, you use the <label> elemen
 Styling: Labels can often be customized in terms of font, color, size, alignment, and other appearance-related properties to fit the overall look and feel of the GUI.
 Accessibility: Labels are essential for making user interfaces accessible to people with disabilities. 
 Screen readers and other assistive technologies use labels to convey information to users who may have visual impairments.
+
+Najprostije rečeno. Label se može zamisliti kao pravougli-kontenjer pogodan za skladištenje slike ili teksta.

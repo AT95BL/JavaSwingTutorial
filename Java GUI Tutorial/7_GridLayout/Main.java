@@ -17,6 +17,10 @@ public class Main
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setSize(500, 500);
 		frame.setLayout(new GridLayout(3,3,10,10));
+		/*
+			3 vrste, 3 kolone
+			10 sirine horizontalnog razmaka, 10 sirine vertikalnog razmaka
+		*/
 		
 		frame.add(new JButton("1"));
 		frame.add(new JButton("2"));

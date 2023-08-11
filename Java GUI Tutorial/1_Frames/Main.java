@@ -1,6 +1,6 @@
-import javax.swing.JFrame;	//	https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/javax/swing/JFrame.html
-import javax.swing.ImageIcon;
-import java.awt.Color;
+import javax.swing.JFrame;		//	https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/javax/swing/JFrame.html
+import javax.swing.ImageIcon;	//	https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/javax/swing/ImageIcon.html
+import java.awt.Color;			//	https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/java/awt/color/package-summary.html
 
 public class Main
 {
@@ -94,4 +94,11 @@ public class Main
 	Za projektni zadatak ovo znanje je vise nego potrebno, a za najbolje razumijevanje navedenih stavki predlazem citaonicu
 	da navedeni code prekucava line-by-line te svaki put iznova i iznova kompajlira i pokrece program kako bi isti mogao da vidi promjene koje prate
 	svaku code-line.
+	
+	Standardna procedura za kreiranje prozora:
+			this.setTitle("JFrame title goes here");	// sets title of frame
+			this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);	// exit out of application
+			this.setResizable(false);	//	prevent frame from being resized
+			this.setSize(420,420);		//	sets the x-dimension, and y-dimension of frame
+			this.setVisible(true);		//	make frame visible
 */

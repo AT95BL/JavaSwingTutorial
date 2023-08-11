@@ -4,9 +4,9 @@ import javax.swing.*;
 
 public class MyFrame extends JFrame implements ActionListener
 {
-	JMenuBar menuBar = new JMenuBar();
+	JMenuBar menuBar = new JMenuBar();							//	https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/javax/swing/JMenuBar.html
 	
-	JMenu fileMenu = new JMenu("File");
+	JMenu fileMenu = new JMenu("File");							//  https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/javax/swing/JMenu.html
 	JMenu editMenu = new JMenu("Edit");
 	JMenu helpMenu = new JMenu("Help");
 	
@@ -71,3 +71,15 @@ public class MyFrame extends JFrame implements ActionListener
 		}
 	}
 }
+/*
+	Komande:
+	
+		Alt + F:
+			S 
+			L
+			E
+		Alt + E
+		Alt + H
+		
+	Probaj..
+*/

@@ -1,12 +1,12 @@
 import javax.swing.JFrame;
-import javax.swing.JButton;
+import javax.swing.JButton;					//	https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/javax/swing/JButton.html
 import javax.swing.ImageIcon;
 import javax.swing.border.Border;
 import javax.swing.BorderFactory;
 import javax.swing.JLabel;
 
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;		//	https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/java/awt/event/ActionListener.html
+import java.awt.event.ActionEvent;			//	https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/java/awt/event/ActionEvent.html
 import java.awt.Font;
 import java.awt.Color;
 
@@ -59,6 +59,16 @@ public class MyFrame extends JFrame implements ActionListener
 				adds an action listener to the button instance, and when the button is clicked, it prints "poo" to the console.
 		*/
 		button.addActionListener(this);
+		/*
+			addActionListener(this): Here, addActionListener is a method provided by the button component in Java's Swing framework (a GUI toolkit). 
+			This method is used to register an ActionListener with the button. 
+			An ActionListener is an interface that defines a contract for receiving action events, such as button clicks.
+			In this case, this is being passed as an argument to the addActionListener method. 
+			In Java, this refers to the current instance of the class in which this code is being used. 
+			It is often used to refer to the current object within a class's methods.
+			So, when you call button.addActionListener(this);, you are effectively saying:
+			"Attach an ActionListener to the button component, and let the current instance (object) of the class handle the action events that occur on this button."
+		*/
 		button.setText("I'm a button!");
 		button.setFocusable(false);
 		button.setIcon(icon);
@@ -88,5 +98,11 @@ public class MyFrame extends JFrame implements ActionListener
 			System.out.println("poo");
 			label.setVisible(true);
 		}
-	}	
+	}
+	/*
+		Za bolje razumijevanje potrebno je shvatiti to da tekuca klasa
+		-implementira ActionListener interface,
+		-Override actionPerformed metodu koja kao argument ima referencu e na objekat klase ActionEvent
+		-klikom na dugme <=>	button.addActionListener(this);
+	*/
 }

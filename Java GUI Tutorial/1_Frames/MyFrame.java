@@ -3,7 +3,7 @@ import javax.swing.ImageIcon;
 import java.awt.Color;
 
 public class MyFrame extends JFrame
-	{
+{
 			
 		public MyFrame()
 		{
@@ -18,4 +18,4 @@ public class MyFrame extends JFrame
 			this.setIconImage(image.getImage());				// change icon of frame	
 			this.getContentPane().setBackground(Color.green);
 		}
-	}
+}

@@ -1,5 +1,5 @@
 import javax.swing.JFrame;
-import javax.swing.JPanel;
+import javax.swing.JPanel;			//	https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/javax/swing/JPanel.html
 import javax.swing.JLabel;
 import javax.swing.ImageIcon;
 

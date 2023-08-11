@@ -1,5 +1,5 @@
 import java.awt.*;
-import javax.swing.*;
+import javax.swing.*;		//	https://docs.oracle.com/en/java/javase/17/docs/api/java.desktop/javax/swing/JProgressBar.html
 
 public class ProgressBarDemo
 {
@@ -10,6 +10,10 @@ public class ProgressBarDemo
 	{
 		bar.setValue(0);
 		bar.setBounds(0,0,420,50);
+		/*
+			(x=0,y=) znaci da bar pocinje da se proteze duz ekrana pocevsi od gornjeg lijevog ugla aplikacijskog prozora.
+			duzina mu je 420 tacaka, a visina 50 tacaka , naravno ne po default-u vec je tako ovdje isprogramirano.
+		*/
 		bar.setStringPainted(true);
 		bar.setFont(new Font("MV Boli", Font.BOLD, 25));
 		bar.setForeground(Color.red);

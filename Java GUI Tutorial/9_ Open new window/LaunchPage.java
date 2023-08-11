@@ -33,3 +33,8 @@ public class LaunchPage implements ActionListener
 		}
 	}
 }
+/*
+	Sve je vec objasnjeno kroy 4. tutorial ili ti Buttons.
+	Ova klasa implementira ActionListener interface, Override actionPerformed metodu koja kao argument ima referencu 'e' na 
+	objekat klase ActionEvent i svaki klik na dugme <=> myButton.addActionListener(this);
+*/
